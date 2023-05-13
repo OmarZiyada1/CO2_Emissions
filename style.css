@@ -2,8 +2,8 @@
     /*variabeln*/
     /*Colors*/
     --color-showPercentage: #2f1919;
-    --color-range_thump: #2c2020;
-    --color-range_track: #2c2020;
+    --color-range-thump: #2c2020;
+    --color-range-track: #2c2020;
     --circle-fill-background: #193db5d1;
 
 
@@ -73,7 +73,7 @@
     width: 100%;
     height: 5px;
     border-radius: 100px;
-    background-color: var(--color-range_track);
+    background-color: var(--color-range-track);
     cursor: pointer;
 }
 
@@ -81,7 +81,7 @@
     -webkit-appearance: none;
     width: 15px;
     height: 15px;
-    background-color: var(--color-range_thump);
+    background-color: var(--color-range-thump);
     border-radius: 100%;
     transform: translateY(-5px);
 
