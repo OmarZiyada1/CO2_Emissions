@@ -49,6 +49,10 @@
   box-shadow: 0 0 0 var(--color-pulse);
   animation: pulse 2s ease-in-out infinite;
 }
+.main #myChart {
+  width: 250px;
+  height: 250px;
+}
 .main #show {
   margin: 0;
   transform: translateY(-60px);

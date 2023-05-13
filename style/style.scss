@@ -63,8 +63,14 @@ $show-percentage: "0%";
       font-size: 2.2rem;
     }
     */
-  }
 
+  
+  }
+  #myChart{
+    width: 250px;
+    height:250px ;
+      
+  }
   #show {
     margin: 0;
     transform: translateY(-60px);
