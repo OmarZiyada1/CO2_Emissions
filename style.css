@@ -1,15 +1,29 @@
-.main{
-    display: flex;
-    justify-content: flex-start;
-    
+:root {
+    /*variabeln*/
+    /*Colors*/
+    --color-showPercentage: #2f1919;
+    --color-range_thump: #2c2020;
+    --color-range_track: #2c2020;
+    --circle-fill-background: #193db5d1;
+
+
 }
 
-.container{
+
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .earth_container {
     width: 300px;
     height: 300px;
@@ -20,19 +34,21 @@
 .earth_container::before {
     position: absolute;
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 292px;
+    height: 292px;
+    border: 4px solid #000;
     border-radius: 100%;
-    background-color: #ffffff;
-    background-image: linear-gradient(0deg , #6e6e6e var(--circle-fill), transparent var(--circle-fill));
+    z-index: -1;
+    background-image: linear-gradient(0deg, var(--circle-fill-background) var(--circle-fill), transparent var(--circle-fill));
 }
 
 
-#show{
-    transform: translateY(-40px);
-    color: red;
-    font-weight: bolder;
+#show {
+    margin: 0;
+    transform: translateY(-60px);
+    color: var(--color-showPercentage);
 }
+
 /*show Percentage
 .earth_container::after {
     counter-reset: showPercentage var(--showPercentage);
@@ -47,32 +63,26 @@
 }
 */
 /*range*/
-.rang-slider[type=range]{
+.rang-slider[type=range] {
     width: 200px;
     margin-top: 40px;
     -webkit-appearance: none;
 }
-.rang-slider[type=range]::-webkit-slider-runnable-track{
+
+.rang-slider[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 5px;
     border-radius: 100px;
-    background-color: #000000;
+    background-color: var(--color-range_track);
     cursor: pointer;
 }
 
-.rang-slider[type=range]::-webkit-slider-thumb{
+.rang-slider[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 15px;
     height: 15px;
-    background-color: #ec0303;
+    background-color: var(--color-range_thump);
     border-radius: 100%;
     transform: translateY(-5px);
-    
+
 }
-
-
-
-
-
-
-  
