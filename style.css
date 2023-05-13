@@ -4,24 +4,25 @@
     --color-showPercentage: #2f1919;
     --color-range-thump: #2c2020;
     --color-range-track: #2c2020;
-    --circle-fill-background: #193db5d1;
+    --circle-fill-background: rgba(36, 1, 12, 0.8);
+    /*Colors*/
+    --show-percentage: "0%";
 
 
-}
-
-
-
-.main {
-    display: flex;
-    justify-content: flex-start;
 
 }
 
-.container {
+.main header {
+    height: 60px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+}
+
+.main header h1 span {
+
+
 }
 
 .earth_container {
@@ -34,38 +35,44 @@
 .earth_container::before {
     position: absolute;
     content: "";
-    width: 292px;
-    height: 292px;
+    width: 100%;
+    height: 100%;
     border: 4px solid #000;
     border-radius: 100%;
     z-index: -1;
     background-image: linear-gradient(0deg, var(--circle-fill-background) var(--circle-fill), transparent var(--circle-fill));
+    --color-pulse: rgba(36, 1, 12, 0.8);
+    box-shadow: 0 0 0 var(--color-pulse);
+    animation: pulse 2s ease-in-out infinite;
 }
 
+
+
+/*
+.earth_container::after {
+    content: var(--show-percentage);
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: var(--color-showPercentage);
+    font-weight: 700;
+    font-size: 2.2rem;
+
+}
+*/
 
 #show {
     margin: 0;
     transform: translateY(-60px);
     color: var(--color-showPercentage);
-}
-
-/*show Percentage
-.earth_container::after {
-    counter-reset: showPercentage var(--showPercentage);
-    content: counter(showPercentage);
-    position: absolute;
-   bottom: 20%;
-   left: 50%;
-   transform: translate(-50%,50%);
-   color: #f40000;
-   font-weight: bold;
+    text-align: center;
 
 }
-*/
+
 /*range*/
 .rang-slider[type=range] {
-    width: 200px;
-    margin-top: 40px;
+    width: 100%;
     -webkit-appearance: none;
 }
 
@@ -85,4 +92,21 @@
     border-radius: 100%;
     transform: translateY(-5px);
 
+}
+
+
+
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--color-pulse);
+    }
+
+    70% {
+        box-shadow: 0 0 0 50px rgba(255, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
 }
