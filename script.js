@@ -97,13 +97,7 @@ const options = {
 }
 const plugins = []
 
-
-
-
-
-
-const app = () => {
-    range.addEventListener("input", fillEarth);
+const createChart = () => {
     const ctx = document.getElementById('myChart');
     const config = {
         type: type,
@@ -112,6 +106,15 @@ const app = () => {
         plugins: plugins,
     }
     new Chart(ctx, config);
+}
+
+
+
+
+const app = () => {
+    range.addEventListener("input", fillEarth)
+    createChart()
+
 }
 app();
 
