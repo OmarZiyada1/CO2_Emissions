@@ -4,6 +4,20 @@ var show = document.querySelector("#show");
 var range = document.querySelector("#range");
 var container = document.querySelector(".earth_container");
 
+
+const generateYears = () => {
+    var container = document.getElementById("year-container");
+    var startYear = 2000;
+    var endYear = 2022;
+    var yearHtml = "";
+
+    for (var i = startYear; i <= endYear; i++) {
+        yearHtml += "<div class='year'>" + i + "</div>";
+        i+=4
+    }
+
+    container.innerHTML = yearHtml;
+}
 /**
  * fillEarth 
  * 
@@ -113,9 +127,18 @@ const createChart = () => {
 
 const app = () => {
     range.addEventListener("input", fillEarth)
+    generateYears();
+    
     createChart()
 
 }
 app();
+
+
+
+
+
+
+
 
 

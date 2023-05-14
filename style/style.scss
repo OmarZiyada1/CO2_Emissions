@@ -1,16 +1,13 @@
-$color-showPercentage: #2f1919;
-$color-range-thump: #2c2020;
-$color-range-track: #2c2020;
-$circle-fill-background: rgba(36, 1, 12, 0.8);
+$color-showPercentage: #000000;
+$color-range-thump: #5828aa;
+$color-range-track: #5e00ec;
+$circle-fill-background: rgba(53, 2, 9, 0.733);
+$color-pulse: $circle-fill-background;
 $show-percentage: "0%";
 
 :root {
   /* Variablen */
   /* Colors */
-  --color-showPercentage: #2f1919;
-  --color-range-thump: #2c2020;
-  --color-range-track: #2c2020;
-  --circle-fill-background: rgba(36, 1, 12, 0.8);
   /* Colors */
   --show-percentage: "0%";
 }
@@ -22,11 +19,6 @@ $show-percentage: "0%";
     display: flex;
     align-items: center;
     justify-content: center;
-
-    h1 {
-      span {
-      }
-    }
   }
 
   .earth_container {
@@ -47,11 +39,10 @@ $show-percentage: "0%";
         $circle-fill-background var(--circle-fill),
         transparent var(--circle-fill)
       );
-      --color-pulse: rgba(36, 1, 12, 0.8);
-      box-shadow: 0 0 0 var(--color-pulse);
+      box-shadow: 0 0 0 $color-pulse;
       animation: pulse 2s ease-in-out infinite;
     }
-/*
+    /*
     &::after {
       content: $show-percentage;
       position: absolute;
@@ -63,13 +54,11 @@ $show-percentage: "0%";
       font-size: 2.2rem;
     }
     */
-
-  
   }
-  #myChart{
+
+  #myChart {
     width: 250px;
-    height:250px ;
-      
+    height: 250px;
   }
   #show {
     margin: 0;
@@ -78,10 +67,9 @@ $show-percentage: "0%";
     text-align: center;
   }
 
-  /* range */
   .rang-slider[type="range"] {
     width: 100%;
-    margin-top: 70px;
+    margin-top: 50px;
     -webkit-appearance: none;
 
     &::-webkit-slider-runnable-track {
@@ -101,11 +89,21 @@ $show-percentage: "0%";
       transform: translateY(-5px);
     }
   }
+  #year-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .year {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 var(--color-pulse);
+    box-shadow: 0 0 0 0 $color-pulse;
   }
   70% {
     box-shadow: 0 0 0 50px rgba(255, 0, 0, 0);

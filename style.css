@@ -2,7 +2,7 @@
     /*variabeln*/
     /*Colors*/
     --color-showPercentage: #2f1919;
-    --color-range-thump: #2c2020;
+    --color-range-thump: #000000;
     --color-range-track: #2c2020;
     --circle-fill-background: rgba(36, 1, 12, 0.8);
     /*Colors*/
@@ -20,10 +20,7 @@
 
 }
 
-.main header h1 span {
 
-
-}
 
 .earth_container {
     width: 300px;
