@@ -8,12 +8,12 @@ var container = document.querySelector(".earth_container");
 const generateYears = () => {
     var container = document.getElementById("year-container");
     var startYear = 2000;
-    var endYear = 2022;
+    var endYear = 2016;
     var yearHtml = "";
 
     for (var i = startYear; i <= endYear; i++) {
         yearHtml += "<div class='year'>" + i + "</div>";
-        i+=4
+        i += 4
     }
 
     container.innerHTML = yearHtml;
@@ -122,13 +122,26 @@ const createChart = () => {
     new Chart(ctx, config);
 }
 
-
+//json fetch
+// Laden der JSON-Daten
+fetch('dt.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.China[0].Jahr);
+        console.log(data.USA[0].Jahr);
+        /*  data.forEach(entry => {
+              console.log(entry.Jahr)
+          });*/
+    })
+    .catch(error => {
+        console.log('Fehler beim Laden der JSON-Daten:', error);
+    });
 
 
 const app = () => {
     range.addEventListener("input", fillEarth)
     generateYears();
-    
+
     createChart()
 
 }

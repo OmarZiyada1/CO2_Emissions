@@ -1,0 +1,70 @@
+{
+    "China": [
+        {
+            "Jahr": 2016,
+            "Informationen": {
+                "Fossile CO2-Emissionen (Tonnen)": "10,432,751,400",
+                "CO2-Emissionen Veraenderung": "-0.28%",
+                "Bevoelkerung": "1,414,049,351",
+                "Bevoelkerungsveraenderung": "0.51 %",
+                "Anteil der Welt CO2-Emissionen": "29.18%",
+                "Rank": 1,
+                "Energiewirtschaft": null,
+                "nicht verbrennend": null,
+                "andere industrielle Verbrennung": null,
+                "Transport": null,
+                "Building": null
+            }
+        },
+        {
+            "Jahr": 2015,
+            "Informationen": {
+                "Fossile CO2-Emissionen (Tonnen)": "10,461,742,000",
+                "CO2-Emissionen Veraenderung": "-0.80%",
+                "Bevoelkerung": "1,406,847,870",
+                "Bevoelkerungsveraenderung": "0.53 %",
+                "Anteil der Welt CO2-Emissionen": "29.26%",
+                "Rank": 1,
+                "Energiewirtschaft": null,
+                "nicht verbrennend": null,
+                "andere industrielle Verbrennung": null,
+                "Transport": null,
+                "Building": null
+            }
+        }
+    ],
+    "USA": [
+        {
+            "Jahr": 2016,
+            "Informationen": {
+                "Fossile CO2-Emissionen (Tonnen)": "10,432,751,400",
+                "CO2-Emissionen Veraenderung": "-0.28%",
+                "Bevoelkerung": "1,414,049,351",
+                "Bevoelkerungsveraenderung": "0.51 %",
+                "Anteil der Welt CO2-Emissionen": "29.18%",
+                "Rank": 1,
+                "Energiewirtschaft": null,
+                "nicht verbrennend": null,
+                "andere industrielle Verbrennung": null,
+                "Transport": null,
+                "Building": null
+            }
+        },
+        {
+            "Jahr": 2015,
+            "Informationen": {
+                "Fossile CO2-Emissionen (Tonnen)": "10,461,742,000",
+                "CO2-Emissionen Veraenderung": "-0.80%",
+                "Bevoelkerung": "1,406,847,870",
+                "Bevoelkerungsveraenderung": "0.53 %",
+                "Anteil der Welt CO2-Emissionen": "29.26%",
+                "Rank": 1,
+                "Energiewirtschaft": null,
+                "nicht verbrennend": null,
+                "andere industrielle Verbrennung": null,
+                "Transport": null,
+                "Building": null
+            }
+        }
+    ]
+}
